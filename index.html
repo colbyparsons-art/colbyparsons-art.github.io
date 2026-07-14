@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Colby Parsons — Artist</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="nav-name">Colby Parsons</a>
+  <button class="nav-toggle" onclick="document.querySelector('.nav-links').classList.toggle('open')" aria-label="Menu">☰</button>
+  <ul class="nav-links">
+    <li class="has-dropdown"><a href="#">Work</a>
+      <ul class="dropdown">
+        <li><a href="parametric-furniture.html">Parametric Furniture</a></li>
+        <li><a href="code-structure-object.html">Code / Structure / Object</a></li>
+        <li><a href="structured-light.html">Structured Light</a></li>
+        <li><a href="materiality-of-light.html">Materiality of Light</a></li>
+        <li><a href="semiotic.html">Semiotic</a></li>
+        <li><a href="collaborations.html">Collaborations</a></li>
+        <li><a href="other-projects.html">Other Projects</a></li>
+      </ul>
+    </li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero: add your image as background-image in the style attribute below -->
+<div class="hero" style="background-image: url('images/hero.jpg')">
+  <div class="hero-text">
+    <h1>Colby<br>Parsons</h1>
+    <p>Ceramics &nbsp;·&nbsp; Digital Fabrication &nbsp;·&nbsp; Installation</p>
+  </div>
+</div>
+
+<!-- Featured projects -->
+<div class="featured-grid">
+  <a href="structured-light.html" class="featured-item">
+    <div class="featured-thumb" style="background-image: url('images/featured-structured-light.jpg')"></div>
+    <div class="featured-overlay">
+      <div class="featured-series">2017–2019</div>
+      <div class="featured-title">Structured Light</div>
+    </div>
+  </a>
+  <a href="materiality-of-light.html" class="featured-item">
+    <div class="featured-thumb" style="background-image: url('images/featured-materiality.jpg')"></div>
+    <div class="featured-overlay">
+      <div class="featured-series">2012–2017</div>
+      <div class="featured-title">Materiality of Light</div>
+    </div>
+  </a>
+  <a href="semiotic.html" class="featured-item">
+    <div class="featured-thumb" style="background-image: url('images/featured-semiotic.jpg')"></div>
+    <div class="featured-overlay">
+      <div class="featured-series">2012–2015</div>
+      <div class="featured-title">Semiotic</div>
+    </div>
+  </a>
+</div>
+
+<footer>© Colby Parsons</footer>
+
+</body>
+</html>
