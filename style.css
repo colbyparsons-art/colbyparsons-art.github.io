@@ -281,10 +281,6 @@ footer {
 .lb-caption {
   padding: 18px 24px 36px; text-align: center;
 }
-.lb-count {
-  font-size: .62rem; letter-spacing: .2em; text-transform: uppercase;
-  color: rgba(255,255,255,.35); margin-bottom: 8px;
-}
 .lb-caption-title {
   font-family: 'Cormorant Garamond', serif; font-size: 1.25rem;
   font-weight: 400; color: #fff; margin-bottom: 4px;

@@ -36,7 +36,6 @@
     img.alt = w.title;
     document.getElementById('lb-title').textContent = w.title;
     document.getElementById('lb-mats').textContent = w.mats;
-    document.getElementById('lb-count').textContent = (idx + 1) + ' / ' + works.length;
   }
 
   document.addEventListener('DOMContentLoaded', () => {
