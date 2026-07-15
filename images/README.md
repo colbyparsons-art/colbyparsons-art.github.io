@@ -7,9 +7,9 @@ All images should be JPG or WEBP. Recommended size: 1600px on the longest edge.
 | File | Used for |
 |------|----------|
 | hero.jpg | Full-screen hero background on home page |
-| featured-structured-light.jpg | Featured grid — Structured Light |
-| featured-materiality.jpg | Featured grid — Materiality of Light |
-| featured-semiotic.jpg | Featured grid — Semiotic |
+| sl-01.jpg | Also used as the Structured Light featured tile on the home page |
+| mol-01.jpg | Also used as the Materiality of Light featured tile on the home page |
+| sem-01.jpg | Also used as the Semiotic featured tile on the home page |
 
 ## Structured Light (sl-01 through sl-08)
 | File | Work |
