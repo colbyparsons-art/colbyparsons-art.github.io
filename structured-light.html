@@ -47,16 +47,8 @@
     </div>
   </div>
 
-  <div class="work-item">
+  <div class="work-item" data-images='["images/Slab with Square Grid.JPG","images/Slab with Square Grid (detail).JPG"]'>
     <div class="work-thumb" style="background-image: url('images/Slab with Square Grid.JPG')"></div>
-    <div class="work-caption">
-      <div class="work-title">Slab with Square Grid</div>
-      <div class="work-materials">Cast ceramic concrete, wood, metal, and fixture · 53″H × 19″W × 18″ · 2018</div>
-    </div>
-  </div>
-
-  <div class="work-item">
-    <div class="work-thumb" style="background-image: url('images/Slab with Square Grid (detail).JPG')"></div>
     <div class="work-caption">
       <div class="work-title">Slab with Square Grid</div>
       <div class="work-materials">Cast ceramic concrete, wood, metal, and fixture · 53″H × 19″W × 18″ · 2018</div>
@@ -79,16 +71,8 @@
     </div>
   </div>
 
-  <div class="work-item">
+  <div class="work-item" data-images='["images/Oval Cylinder with Triangle Grid.JPG","images/Oval Cylinder with Triangle Grid (detail).JPG"]'>
     <div class="work-thumb" style="background-image: url('images/Oval Cylinder with Triangle Grid.JPG')"></div>
-    <div class="work-caption">
-      <div class="work-title">Oval Cylinder with Triangle Grid</div>
-      <div class="work-materials">Glazed ceramic concrete, HTPLA plastic, acrylic, stainless steel, LED fixture</div>
-    </div>
-  </div>
-
-  <div class="work-item">
-    <div class="work-thumb" style="background-image: url('images/Oval Cylinder with Triangle Grid (detail).JPG')"></div>
     <div class="work-caption">
       <div class="work-title">Oval Cylinder with Triangle Grid</div>
       <div class="work-materials">Glazed ceramic concrete, HTPLA plastic, acrylic, stainless steel, LED fixture</div>
@@ -128,10 +112,12 @@
 <div class="lb-overlay" id="lb">
   <button class="lb-close" onclick="lbClose()">✕</button>
   <button class="lb-prev" onclick="lbPrev()">&#8249;</button>
-  <div class="lb-image-wrap"><img id="lb-img" src="" alt=""></div>
-  <div class="lb-caption">
-<div id="lb-title" class="lb-caption-title"></div>
-    <div id="lb-mats" class="lb-caption-materials"></div>
+  <div class="lb-scroll" id="lb-scroll">
+    <div id="lb-images"></div>
+    <div class="lb-caption">
+      <div id="lb-title" class="lb-caption-title"></div>
+      <div id="lb-mats" class="lb-caption-materials"></div>
+    </div>
   </div>
   <button class="lb-next" onclick="lbNext()">&#8250;</button>
 </div>

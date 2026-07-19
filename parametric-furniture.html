@@ -36,7 +36,7 @@
 
 <div class="work-grid">
 
-  <div class="work-item">
+  <div class="work-item" data-images='["images/PXL_20250412_212403552.webp","images/PXL_20250412_212409700.webp"]'>
     <div class="work-thumb" style="background-image: url('images/PXL_20250412_212403552.webp')"></div>
     <div class="work-caption">
       <div class="work-title">Lotus Seat</div>
@@ -44,15 +44,7 @@
     </div>
   </div>
 
-  <div class="work-item">
-    <div class="work-thumb" style="background-image: url('images/PXL_20250412_212409700.webp')"></div>
-    <div class="work-caption">
-      <div class="work-title">Lotus Seat</div>
-      <div class="work-materials">Baltic birch plywood and woven seat</div>
-    </div>
-  </div>
-
-  <div class="work-item">
+  <div class="work-item" data-images='["images/PXL_20250912_220732416.webp","images/PXL_20250912_220740412(1).webp"]'>
     <div class="work-thumb" style="background-image: url('images/PXL_20250912_220732416.webp')"></div>
     <div class="work-caption">
       <div class="work-title">Root Table with Red Glaze</div>
@@ -60,15 +52,7 @@
     </div>
   </div>
 
-  <div class="work-item">
-    <div class="work-thumb" style="background-image: url('images/PXL_20250912_220740412(1).webp')"></div>
-    <div class="work-caption">
-      <div class="work-title">Root Table with Red Glaze</div>
-      <div class="work-materials">Baltic birch plywood, glazed stoneware</div>
-    </div>
-  </div>
-
-  <div class="work-item">
+  <div class="work-item" data-images='["images/PXL_20230911_163213381.jpg","images/PXL_20230911_203819117.JPG","images/PXL_20230911_204000560.JPG"]'>
     <div class="work-thumb" style="background-image: url('images/PXL_20230911_163213381.jpg')"></div>
     <div class="work-caption">
       <div class="work-title">Disordered Matrix #83</div>
@@ -76,40 +60,8 @@
     </div>
   </div>
 
-  <div class="work-item">
-    <div class="work-thumb" style="background-image: url('images/PXL_20230911_203819117.JPG')"></div>
-    <div class="work-caption">
-      <div class="work-title">Disordered Matrix #83</div>
-      <div class="work-materials">Plywood, paint, and hardware</div>
-    </div>
-  </div>
-
-  <div class="work-item">
-    <div class="work-thumb" style="background-image: url('images/PXL_20230911_204000560.JPG')"></div>
-    <div class="work-caption">
-      <div class="work-title">Disordered Matrix #83</div>
-      <div class="work-materials">Plywood, paint, and hardware</div>
-    </div>
-  </div>
-
-  <div class="work-item">
+  <div class="work-item" data-images='["images/PXL_20230911_163043032.MP.webp","images/PXL_20230911_163055576.webp","images/PXL_20230911_163154865.webp"]'>
     <div class="work-thumb" style="background-image: url('images/PXL_20230911_163043032.MP.webp')"></div>
-    <div class="work-caption">
-      <div class="work-title">Breathe #27</div>
-      <div class="work-materials">Plywood, paint, and hardware</div>
-    </div>
-  </div>
-
-  <div class="work-item">
-    <div class="work-thumb" style="background-image: url('images/PXL_20230911_163055576.webp')"></div>
-    <div class="work-caption">
-      <div class="work-title">Breathe #27</div>
-      <div class="work-materials">Plywood, paint, and hardware</div>
-    </div>
-  </div>
-
-  <div class="work-item">
-    <div class="work-thumb" style="background-image: url('images/PXL_20230911_163154865.webp')"></div>
     <div class="work-caption">
       <div class="work-title">Breathe #27</div>
       <div class="work-materials">Plywood, paint, and hardware</div>
@@ -121,10 +73,12 @@
 <div class="lb-overlay" id="lb">
   <button class="lb-close" onclick="lbClose()">✕</button>
   <button class="lb-prev" onclick="lbPrev()">&#8249;</button>
-  <div class="lb-image-wrap"><img id="lb-img" src="" alt=""></div>
-  <div class="lb-caption">
-<div id="lb-title" class="lb-caption-title"></div>
-    <div id="lb-mats" class="lb-caption-materials"></div>
+  <div class="lb-scroll" id="lb-scroll">
+    <div id="lb-images"></div>
+    <div class="lb-caption">
+      <div id="lb-title" class="lb-caption-title"></div>
+      <div id="lb-mats" class="lb-caption-materials"></div>
+    </div>
   </div>
   <button class="lb-next" onclick="lbNext()">&#8250;</button>
 </div>
