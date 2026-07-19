@@ -18,7 +18,8 @@
       }
       const title = item.querySelector('.work-title')?.textContent || '';
       const mats  = item.querySelector('.work-materials')?.textContent || '';
-      works.push({ images, title, mats });
+      const video = item.dataset.video || '';
+      works.push({ images, title, mats, video });
       if(images.length) item.addEventListener('click', () => show(i));
     });
   }
@@ -31,6 +32,7 @@
   }
 
   function close(){
+    document.getElementById('lb-images').innerHTML = '';
     document.getElementById('lb').classList.remove('open');
     document.body.style.overflow = '';
   }
@@ -43,7 +45,9 @@
     const container = document.getElementById('lb-images');
     container.innerHTML = w.images.map(src =>
       '<img src="' + src + '" alt="' + w.title + '" class="lb-scroll-img">'
-    ).join('');
+    ).join('') + (w.video
+      ? '<div class="lb-video-wrap"><iframe class="lb-video" src="https://www.youtube.com/embed/' + w.video + '" frameborder="0" allowfullscreen></iframe></div>'
+      : '');
     document.getElementById('lb-scroll').scrollTop = 0;
     document.getElementById('lb-title').textContent = w.title;
     document.getElementById('lb-mats').textContent = w.mats;
