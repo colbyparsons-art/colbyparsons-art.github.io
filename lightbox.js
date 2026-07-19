@@ -19,11 +19,11 @@
       const title = item.querySelector('.work-title')?.textContent || '';
       const mats  = item.querySelector('.work-materials')?.textContent || '';
       works.push({ images, title, mats });
-      if(images.length) item.addEventListener('click', () => open(i));
+      if(images.length) item.addEventListener('click', () => show(i));
     });
   }
 
-  function open(i){
+  function show(i){
     current = i;
     render();
     document.getElementById('lb').classList.add('open');
