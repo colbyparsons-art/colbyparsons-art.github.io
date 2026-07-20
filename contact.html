@@ -32,8 +32,15 @@
 <div class="contact-wrap">
   <h1>Contact</h1>
   <p>For inquiries about exhibitions, commissions, or collaboration, please send an email.</p>
-  <!-- Replace the href and text below with your actual email address -->
-  <a href="mailto:your@email.com" class="contact-email">your@email.com</a>
+  <a id="contact-link" class="contact-email"></a>
+  <script>
+    (function(){
+      var u='cparsons',d='twu.edu';
+      var a=document.getElementById('contact-link');
+      a.href='mailto:'+u+'@'+d;
+      a.textContent=u+'@'+d;
+    })();
+  </script>
 </div>
 
 <footer>© Colby Parsons</footer>
