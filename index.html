@@ -29,32 +29,56 @@
   </ul>
 </nav>
 
-<!-- Hero: add your image as background-image in the style attribute below -->
-<div class="hero" style="background-image: url('images/hero.jpg')">
+<div class="hero">
+  <div class="hero-bg" id="hero-bg-a"></div>
+  <div class="hero-bg" id="hero-bg-b"></div>
   <div class="hero-text">
     <h1>Colby<br>Parsons</h1>
     <p>Ceramics &nbsp;·&nbsp; Digital Fabrication &nbsp;·&nbsp; Installation</p>
   </div>
 </div>
+<script>
+(function(){
+  var imgs = [
+    'images/PXL_20250412_212403552.webp',
+    'images/PXL_20250912_220732416.webp',
+    'images/PXL_20230911_163213381.jpg',
+    'images/PXL_20230911_163043032.MP.webp'
+  ];
+  var idx = 0, active = 0;
+  var layers = [document.getElementById('hero-bg-a'), document.getElementById('hero-bg-b')];
+  layers[0].style.backgroundImage = "url('" + imgs[0] + "')";
+  layers[0].style.opacity = '1';
+  layers[1].style.opacity = '0';
+  setInterval(function(){
+    idx = (idx + 1) % imgs.length;
+    var next = 1 - active;
+    layers[next].style.backgroundImage = "url('" + imgs[idx] + "')";
+    layers[next].style.opacity = '1';
+    layers[active].style.opacity = '0';
+    active = next;
+  }, 5000);
+})();
+</script>
 
 <!-- Featured projects -->
 <div class="featured-grid">
   <a href="structured-light.html" class="featured-item">
-    <div class="featured-thumb" style="background-image: url('images/sl-01.jpg')"></div>
+    <div class="featured-thumb" style="background-image: url('images/doublecone+with+hexagon+grid+(2).webp')"></div>
     <div class="featured-overlay">
       <div class="featured-series">2017–2019</div>
       <div class="featured-title">Structured Light</div>
     </div>
   </a>
   <a href="materiality-of-light.html" class="featured-item">
-    <div class="featured-thumb" style="background-image: url('images/mol-01.jpg')"></div>
+    <div class="featured-thumb" style="background-image: url('images/Peak+(1).webp')"></div>
     <div class="featured-overlay">
       <div class="featured-series">2012–2017</div>
       <div class="featured-title">Materiality of Light</div>
     </div>
   </a>
   <a href="semiotic.html" class="featured-item">
-    <div class="featured-thumb" style="background-image: url('images/sem-01.jpg')"></div>
+    <div class="featured-thumb" style="background-image: url('images/Semiotic (reprise) 1.webp')"></div>
     <div class="featured-overlay">
       <div class="featured-series">2012–2015</div>
       <div class="featured-title">Semiotic</div>
