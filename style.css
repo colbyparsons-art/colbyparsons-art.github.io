@@ -174,6 +174,9 @@ nav {
 .work-materials {
   font-size: .76rem; color: var(--dim); line-height: 1.55;
 }
+.work-desc {
+  font-size: .76rem; color: var(--mid); line-height: 1.6; margin-top: 8px;
+}
 
 /* ── Collaborations & Other Projects (entry list) ────────── */
 .entry-list { padding: 0 60px; }

@@ -18,9 +18,14 @@
       }
       const title = item.querySelector('.work-title')?.textContent || '';
       const mats  = item.querySelector('.work-materials')?.textContent || '';
-      const video = item.dataset.video || '';
-      works.push({ images, title, mats, video });
-      if(images.length) item.addEventListener('click', () => show(i));
+      let videos = [];
+      if(item.dataset.videos){
+        videos = JSON.parse(item.dataset.videos);
+      } else if(item.dataset.video){
+        videos = [item.dataset.video];
+      }
+      works.push({ images, title, mats, videos });
+      if(images.length || videos.length) item.addEventListener('click', () => show(i));
     });
   }
 
@@ -43,11 +48,13 @@
   function render(){
     const w = works[current];
     const container = document.getElementById('lb-images');
-    container.innerHTML = w.images.map(src =>
+    const imgHtml = w.images.map(src =>
       '<img src="' + src + '" alt="' + w.title + '" class="lb-scroll-img">'
-    ).join('') + (w.video
-      ? '<div class="lb-video-wrap"><iframe class="lb-video" src="https://www.youtube.com/embed/' + w.video + '" frameborder="0" allowfullscreen></iframe></div>'
-      : '');
+    ).join('');
+    const videoHtml = w.videos.map(id =>
+      '<div class="lb-video-wrap"><iframe class="lb-video" src="https://www.youtube.com/embed/' + id + '" frameborder="0" allowfullscreen></iframe></div>'
+    ).join('');
+    container.innerHTML = imgHtml + videoHtml;
     document.getElementById('lb-scroll').scrollTop = 0;
     document.getElementById('lb-title').textContent = w.title;
     document.getElementById('lb-mats').textContent = w.mats;

@@ -34,45 +34,59 @@
   <p>Selected collaborative projects spanning installation, performance, and multimedia work.</p>
 </div>
 
-<div class="entry-list">
+<div class="work-grid">
 
-  <div class="entry">
-    <div class="entry-thumb" style="background-image: url('images/brian-boldon_liquid+show+(table).jpg')"></div>
-    <div class="entry-text">
-      <div class="entry-meta">With Brian Boldon · 2005</div>
-      <h2>Liquid — Dataspace and Embodiment</h2>
-      <p>An installation representing an imagined fluidity between real physical space and the virtual spaces within our digital screens.</p>
+  <div class="work-item" data-images='["images/brian-boldon_liquid+show+(table).jpg","images/brian-boldon_liquid+show+(table+detail2).jpg","images/brian-boldon_liquid+show+(table+side+view).JPG","images/brian-boldon_liquid+show+(window).JPG","images/brian-boldon_new+window1a.jpg","images/brian-boldon_table+video+inst.JPG","images/brian-boldon_image-asset.jpeg","images/brian-boldon_image-asset (1).jpeg","images/brian-boldon_glass+table.JPG"]' data-videos='["VfZFpU3lArA","49mnoP_UT7E"]'>
+    <div class="work-thumb" style="background-image: url('images/brian-boldon_liquid+show+(table).jpg')"></div>
+    <div class="work-caption">
+      <div class="work-title">Liquid — Dataspace and Embodiment</div>
+      <div class="work-materials">With Brian Boldon · 2005</div>
+      <div class="work-desc">An installation representing an imagined fluidity between real physical space and the virtual spaces within our digital screens.</div>
     </div>
   </div>
 
-  <div class="entry">
-    <div class="entry-thumb" style="background-image: url('images/greg-dixon_DSC_4664.JPG')"></div>
-    <div class="entry-text">
-      <div class="entry-meta">With Greg Dixon · 2010</div>
-      <h2>Luminous Oscillations</h2>
-      <p>An installation exploring rotational movement through light, sound, and form.</p>
+  <div class="work-item" data-images='["images/greg-dixon_DSC_4664.JPG","images/greg-dixon_DSC_4670.JPG","images/greg-dixon_DSC_4672.JPG","images/greg-dixon_DSC_4712.JPG","images/greg-dixon_DSC_4732.JPG","images/greg-dixon_image-asset.jpeg"]' data-video="nf_DN_j4jPg">
+    <div class="work-thumb" style="background-image: url('images/greg-dixon_DSC_4664.JPG')"></div>
+    <div class="work-caption">
+      <div class="work-title">Luminous Oscillations</div>
+      <div class="work-materials">With Greg Dixon · 2010</div>
+      <div class="work-desc">An installation exploring rotational movement through light, sound, and form.</div>
     </div>
   </div>
 
-  <div class="entry">
-    <div class="entry-thumb" style="background-image: url('images/anastasia-gabriel_truly_madly_deeply_4324.jpg')"></div>
-    <div class="entry-text">
-      <div class="entry-meta">With Anastasia Gabriel · 2014</div>
-      <h2>Truly Madly Deeply</h2>
-      <p>An installation piece about childhood conceptions of heaven and hell.</p>
+  <div class="work-item" data-images='["images/anastasia-gabriel_truly_madly_deeply_4324.jpg","images/anastasia-gabriel_truly_madly_deeply_4357.jpg","images/anastasia-gabriel_truly_madly_deeply_4362.jpg","images/anastasia-gabriel_truly_madly_deeply_4369.jpg","images/anastasia-gabriel_truly_madly_deeply_4372.jpg","images/anastasia-gabriel_truly_madly_deeply_4377.jpg","images/anastasia-gabriel_truly_madly_deeply_4394.jpg","images/anastasia-gabriel_truly_madly_deeply_4422.jpg"]'>
+    <div class="work-thumb" style="background-image: url('images/anastasia-gabriel_truly_madly_deeply_4324.jpg')"></div>
+    <div class="work-caption">
+      <div class="work-title">Truly Madly Deeply</div>
+      <div class="work-materials">With Anastasia Gabriel · 2014</div>
+      <div class="work-desc">An installation piece about childhood conceptions of heaven and hell.</div>
     </div>
   </div>
 
-  <div class="entry">
-    <div class="entry-thumb" style="background-image: url('images/rosemary-candelario_7N7A0626.JPG')"></div>
-    <div class="entry-text">
-      <div class="entry-meta">With Rosemary Candelario · 2016</div>
-      <h2>Surface</h2>
-      <p>A multimedia live performance using abstraction and the human body to represent grand visions of landscape, seascape, and cosmic space.</p>
+  <div class="work-item" data-images='["images/rosemary-candelario_7N7A0626.JPG","images/rosemary-candelario_7N7A0640.JPG","images/rosemary-candelario_7N7A0646.JPG","images/rosemary-candelario_HEP_2756.jpg"]'>
+    <div class="work-thumb" style="background-image: url('images/rosemary-candelario_7N7A0626.JPG')"></div>
+    <div class="work-caption">
+      <div class="work-title">Surface</div>
+      <div class="work-materials">With Rosemary Candelario · 2016</div>
+      <div class="work-desc">A multimedia live performance using abstraction and the human body to represent grand visions of landscape, seascape, and cosmic space.</div>
     </div>
   </div>
 
 </div>
+
+<div class="lb-overlay" id="lb">
+  <button class="lb-close" onclick="lbClose()">✕</button>
+  <button class="lb-prev" onclick="lbPrev()">&#8249;</button>
+  <div class="lb-scroll" id="lb-scroll">
+    <div id="lb-images"></div>
+    <div class="lb-caption">
+      <div id="lb-title" class="lb-caption-title"></div>
+      <div id="lb-mats" class="lb-caption-materials"></div>
+    </div>
+  </div>
+  <button class="lb-next" onclick="lbNext()">&#8250;</button>
+</div>
+<script src="lightbox.js"></script>
 
 <footer>© Colby Parsons</footer>
 </body>
