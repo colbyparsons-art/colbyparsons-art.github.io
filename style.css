@@ -294,6 +294,9 @@ footer {
   font-weight: 400; color: #fff; margin-bottom: 4px;
 }
 .lb-caption-materials { font-size: .78rem; color: rgba(255,255,255,.45); }
+.lb-longdesc { margin-top: 20px; text-align: left; max-width: 680px; margin-left: auto; margin-right: auto; }
+.lb-longdesc p { font-size: .88rem; line-height: 1.85; color: rgba(255,255,255,.65); margin-bottom: 14px; }
+.lb-longdesc p:last-child { margin-bottom: 0; }
 .lb-close {
   position: fixed; top: 20px; right: 26px;
   background: none; border: none; cursor: pointer;

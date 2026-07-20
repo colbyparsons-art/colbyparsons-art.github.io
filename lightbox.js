@@ -24,7 +24,8 @@
       } else if(item.dataset.video){
         videos = [item.dataset.video];
       }
-      works.push({ images, title, mats, videos });
+      const longdesc = item.dataset.longdesc || '';
+      works.push({ images, title, mats, videos, longdesc });
       if(images.length || videos.length) item.addEventListener('click', () => show(i));
     });
   }
@@ -58,6 +59,16 @@
     document.getElementById('lb-scroll').scrollTop = 0;
     document.getElementById('lb-title').textContent = w.title;
     document.getElementById('lb-mats').textContent = w.mats;
+    var descEl = document.getElementById('lb-longdesc');
+    if(descEl){
+      if(w.longdesc){
+        descEl.innerHTML = w.longdesc.split('|').map(function(p){ return '<p>' + p + '</p>'; }).join('');
+        descEl.style.display = '';
+      } else {
+        descEl.innerHTML = '';
+        descEl.style.display = 'none';
+      }
+    }
   }
 
   document.addEventListener('DOMContentLoaded', function(){
